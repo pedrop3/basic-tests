@@ -1,12 +1,12 @@
-CRUD
+## Cadastro Remetente
+- Nome: [Inserir Nome]
+- CPF: [Inserir CPF]
 
-    * Cadastro remetente
-        * Nome
-        * cpf
-     Cadastro destinatário
-        * Nome
-        * cpf
-    * Entrega Cadastro de Nova Entrega
-        [X] Relação remente destinatário
-        [X] Valor da entrega
-        [ ]  Atualização da Entrega
+## Cadastro Destinatário
+- Nome: [Inserir Nome]
+- CPF: [Inserir CPF]
+
+## Entrega Cadastro de Nova Entrega
+- [x] Relação Remetente-Destinatário
+- [x] Valor da Entrega: [Inserir valor]
+- [ ] Atualização da Entrega
