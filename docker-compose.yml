@@ -1,0 +1,32 @@
+version: '3.3'
+
+services:
+  pg-master:
+    image: 'postgres:latest'
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+      PGDATA: '/var/lib/postgresql/data/pgdata'
+    volumes:
+        - /data/apps/packagegls:/var/lib/postgresql/data
+    ports:
+      - '7001:5432'
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 250m
+        reservations:
+          memory: 100m
+
+  service-package:
+    image: 'packagegls:latest'
+    network_mode: host
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 250m
+        reservations:
+          memory: 100m
+

@@ -23,7 +23,7 @@ dependencies {
 	// Utilitários para Hibernate
 	implementation 'io.hypersistence:hypersistence-utils-hibernate-60:3.6.0'
 
-	// Banco de dados PostgreSQL
+	// Banco de dados
 	runtimeOnly 'org.postgresql:postgresql'
 
 	// Lombok para geração automática de código
